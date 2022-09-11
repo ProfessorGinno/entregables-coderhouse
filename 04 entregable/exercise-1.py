@@ -8,13 +8,13 @@
 # -- Solution --
 
 def leap_year(number):
-    # Checking if the number is multiple of 100, 400, and 4.
-    # Also checking if the number is not multiple of 100 and 4    
+    """ Checking if the number is multiple of 100, 400, and 4. 
+        Also checking if the number is not multiple of 100 and 4.
+    """    
     if (u_answer == 0):
         print(f"{u_answer} is NOT a leap-year.\n")
-    elif (u_answer % 100 == 0) and (u_answer % 400 == 0) and (u_answer % 4 == 0):
-        print(f"{u_answer} is a leap-year.\n")
-    elif (u_answer % 100 != 0) and (u_answer % 4 == 0):
+    elif ((u_answer % 100 == 0 and u_answer % 400 == 0) 
+            or (u_answer % 4 == 0 and u_answer % 100 != 0)):
         print(f"{u_answer} is a leap-year.\n")
     else:
         print(f"{u_answer} is NOT a leap-year.\n")
